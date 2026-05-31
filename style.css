@@ -1,0 +1,159 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f5f8ff;
+color:#222;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:white;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#2563eb;
+}
+
+nav a{
+text-decoration:none;
+margin:0 15px;
+color:#111;
+font-weight:500;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px;
+}
+
+.hero-content{
+max-width:600px;
+}
+
+.hero h1{
+font-size:70px;
+color:#0f172a;
+}
+
+.hero h2{
+margin:10px 0;
+color:#475569;
+}
+
+.hero p{
+line-height:1.8;
+}
+
+.hero-image img{
+width:320px;
+height:320px;
+border-radius:50%;
+border:6px solid white;
+box-shadow:0 0 20px rgba(0,0,0,.15);
+}
+
+.buttons{
+margin-top:20px;
+}
+
+.btn{
+padding:12px 25px;
+border:2px solid #2563eb;
+border-radius:30px;
+text-decoration:none;
+margin-right:10px;
+color:#2563eb;
+}
+
+.primary{
+background:#2563eb;
+color:white;
+}
+
+section{
+padding:70px 80px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+color:#0f172a;
+}
+
+.about-container,
+.skills-grid,
+.project-grid,
+.cert-grid,
+.contact-grid{
+display:grid;
+gap:20px;
+}
+
+.about-container{
+grid-template-columns:2fr 1fr;
+}
+
+.skills-grid{
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.project-grid{
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+
+.cert-grid{
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.contact-grid{
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.card,
+.project-card,
+.education-card,
+.experience-card,
+.focus-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.project-card a{
+text-decoration:none;
+color:#2563eb;
+font-weight:bold;
+}
+
+.dark{
+background:#111827;
+color:white;
+}
+
+.dark header{
+background:#1f2937;
+}
+
+.dark .card,
+.dark .project-card,
+.dark .education-card,
+.dark .experience-card,
+.dark .focus-card{
+background:#1f2937;
+color:white;
+}
